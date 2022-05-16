@@ -19,7 +19,7 @@ def lambda_handler(event, context):
     scraper = scrape_me(recipeURL)
 
     title = scraper.title()
-    total_time = scraper.total_time() else null
+    total_time = scraper.total_time()
     ingredients = scraper.ingredients()
     instructions = scraper.instructions()
     yields = scraper.yields()
