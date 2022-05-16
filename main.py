@@ -15,8 +15,8 @@ host = scraper.host()
 nutrients = scraper.nutrients()
 
 recipeComponents ={
-  'title' : scraper.title(),
-  'ingredients' : scraper.ingredients(),
+  'title' : title,
+  'ingredients' : ingredients,
   'instructions' : instructions.replace("\n", " "),
   'yield' : yields,
   'image' : image,
