@@ -2,7 +2,7 @@ import json
 from recipe_scrapers import scrape_me
 
 def lambda_handler(event, context):
-    body = json.loads(event['body'])
+    request = json.dumps(event)
 
     if 'recipeURL' not in body:
         return {
